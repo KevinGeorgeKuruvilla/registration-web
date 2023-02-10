@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omifood Hero Section</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <a href="#" class="btn">LOG IN</a>
+      </nav>
+
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>
+            It's how you deal with failure that determines how you achieve
+            success.
+          </h1>
+          <p>
+            The only workshop you need to kow about money , finance and
+            investing. So what are you waiting for, Register for free and grab
+            your seats now.
+          </p>
+          <a href="#" class="btn">Register Now!</a>
+        </div>
+      </div>
+      <p id="demo"></p>
+    </header>
+
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML =
+          days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+
+    <section class="section-how">
+      <div class="container">
+        <span class="subheading">How it works</span>
+        <h2 class="heading-secondary">
+          Your daily dose of health in 3 simple steps
+        </h2>
+      </div>
+
+      <div class="container grid grid--2-cols grid--center-v">
+        <!-- STEP 01 -->
+        <div class="step-text-box">
+          <p class="step-number">01</p>
+          <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
+          <p class="step-description">
+            Never again waste time thinking about what to eat! Omnifood AI will
+            create a 100% personalized weekly meal plan just for you. It makes
+            sure you get all the nutrients and vitamins you need, no matter what
+            diet you follow!
+          </p>
+        </div>
+
+        <div class="step-img-box">
+          <img
+            src="intro.jpg"
+            class="step-img"
+            alt="iPhone app
+          preferences selection screen"
+          />
+        </div>
+
+        <!-- STEP 02 -->
+        <div class="step-img-box">
+          <img
+            src="money.jpg"
+            class="step-img"
+            alt="iPhone app
+          meal approving plan screen"
+          />
+        </div>
+        <div class="step-text-box">
+          <p class="step-number">02</p>
+          <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+          <p class="step-description">
+            Once per week, approve the meal plan generated for you by Omnifood
+            AI. You can change ingredients, swap entire meals, or even add your
+            own recipes.
+          </p>
+        </div>
+
+        <!-- STEP 03 -->
+        <div class="step-text-box">
+          <p class="step-number">03</p>
+          <h3 class="heading-tertiary">Receive meals at convenient time</h3>
+          <p class="step-description">
+            Best chefs in town will cook your selected meal every day, and we
+            will deliver it to your door whenever works best for you. You can
+            change delivery schedule and address daily!
+          </p>
+        </div>
+        <div class="step-img-box">
+          <img
+            src="fina.jpg"
+            class="step-img"
+            alt="iPhone app
+          delivery screen"
+          />
+        </div>
+        <div class="step-text-box">
+          <!-- step 04 -->
+          <p class="step-number">04</p>
+          <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
+          <p class="step-description">
+            Never again waste time thinking about what to eat! Omnifood AI will
+            create a 100% personalized weekly meal plan just for you. It makes
+            sure you get all the nutrients and vitamins you need, no matter what
+            diet you follow!
+          </p>
+        </div>
+
+        <div class="step-img-box">
+          <img
+            src="invest.jpg"
+            class="step-img"
+            alt="iPhone app
+          preferences selection screen"
+          />
+        </div>
+
+        <div class="step-img-box">
+          <img
+            src="end.jpg"
+            class="step-img"
+            alt="iPhone app
+          meal approving plan screen"
+          />
+        </div>
+
+        <!-- step 06 -->
+        <div class="step-text-box">
+          <p class="step-number">05</p>
+          <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+          <p class="step-description">
+            Once per week, approve the meal plan generated for you by Omnifood
+            AI. You can change ingredients, swap entire meals, or even add your
+            own recipes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <form action="action.php">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr />
+
+        <label for="name"><b>Name</b></label>
+        <input
+          type="text"
+          placeholder="Enter Your Name"
+          name="name"
+          required
+        /><br />
+
+        <label for="number"><b>Contact No.</b></label>
+        <input
+          type="text"
+          placeholder="Enter Your Contact No."
+          name="number"
+          required
+        /><br />
+
+        <label for="email"><b>Email</b></label>
+        <input
+          type="text"
+          placeholder="Enter Your E-mail"
+          name="email"
+          required
+        /><br />
+
+        <label for="pwd"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Your Password"
+          name="psw"
+          required
+        /><br />
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          placeholder="Repeat Your Password"
+          name="psw-repeat"
+          required
+        /><br />
+        <hr />
+        <button type="submit" class="registerbutton">Register</button>
+        <p>
+          By creating an account you agree to our
+          <a href="#">Terms & Privacy</a>.
+        </p>
+
+        <p>Already have an account? <a href="#">Sign in</a>.</p>
+      </form>
+    </section>
+  </body>
+</html>
