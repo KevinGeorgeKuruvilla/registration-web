@@ -141,14 +141,15 @@ section {
   line-height: 1.8;
 }
 .step-img {
-  width: 35%;
+  width: 95%;
 }
 .step-img-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  /* position: relative; */
 }
+
 .step-img-box::before,
 .step-img-box::after {
   content: "";
